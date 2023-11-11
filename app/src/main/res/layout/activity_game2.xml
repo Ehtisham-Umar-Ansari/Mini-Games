@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/blue_background"
+    android:layout_height="match_parent"
+    tools:context=".Game2">
+
+    <LinearLayout
+        android:layout_above="@+id/container"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/player1Layout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:background="@drawable/round_back_blue_border"
+            android:gravity="center">
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/player1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Player One"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cross"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/player1wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player2Layout"
+            android:layout_marginStart="20dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_back_blue_border"
+            android:gravity="center">
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/player2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Player Two"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/o"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/player2wins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            style="@style/row">
+            
+            <Button
+                android:id="@+id/a1"
+                style="@style/column"/>
+
+            <View style="@style/verticalLine" />
+            <Button
+                android:id="@+id/a2"
+                style="@style/column"/>
+            <View
+                style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/a3"
+                style="@style/column"/>
+        </LinearLayout>
+
+        <View
+            style="@style/horizonalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/column"/>
+            <View
+                style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/b2"
+                style="@style/column"/>
+            <View
+                style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/b3"
+                style="@style/column"/>
+        </LinearLayout>
+
+        <View
+            style="@style/horizonalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <Button
+                android:id="@+id/c1"
+                style="@style/column"/>
+            <View
+                style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/c2"
+                style="@style/column"/>
+            <View
+                style="@style/verticalLine"/>
+            <Button
+                android:id="@+id/c3"
+                style="@style/column"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+</RelativeLayout>
